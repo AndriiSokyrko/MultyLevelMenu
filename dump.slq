@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `parent` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+
+--
+-- Дамп данных таблицы `categories`
+--
+INSERT INTO `categories` (`id`, `title`, `parent`) VALUES
+(1, 'Автомобили', 0),
+(2, 'Мотоциклы', 0),
+(3, 'Мазда', 1),
+(4, 'Хонда', 1),
+(5, 'Кавасаки', 2),
+(6, 'Харлей', 2),
+(7, 'Мазда 3', 3),
+(8, 'Мазда 6', 3),
+(9, 'Седан', 7),
+(10, 'Хечбэк', 7),
+(11, 'Лодки', 0),
+(12, 'Лифтбэк', 8),
+(13, 'Кроссовер', 8),
+(14, 'Белый', 13),
+(15, 'Красный', 13),
+(16, 'Черный', 13),
+(17, 'Зеленый', 13),
+(18, 'Мазда CX', 3),
+(19, 'Мазда MX', 3);
